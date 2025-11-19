@@ -1,58 +1,72 @@
-name: Hackathon Project Submission
-description: Submit your hackathon project details here
-title: "[Submission] <Project Title>"
+name: Hackathon Submission 2025
+description: Submit your Microsoft Fabric Hackathon project.
+title: "<Project Name>"
 labels: ["hackathon"]
 assignees: []
  
 body:
   - type: input
-    id: firstname
+    id: name
     attributes:
-      label: First and Last Name
-      placeholder: e.g., Sammy Chesire
+      label: "First and Last Name *"
+      description: "Please use the same name you used to register."
+      placeholder: "e.g. John Doe"
     validations:
       required: true
  
   - type: dropdown
-    id: mslearn
+    id: skilling
     attributes:
-      label: Did you attend the Youtube live learning plan?
+      label: "YouTube Live Skilling Plan Completion *"
+      description: "Did you attend the YouTube live learning sessions?"
       options:
-        - Yes
-        - No
+        - "Yes"
+        - "No"
     validations:
       required: true
  
   - type: textarea
-    id: description
+    id: pitch
     attributes:
-      label: Project Pitch or Description
-      description: Describe your project clearly.
-      placeholder: Write a detailed description...
+      label: "Project Pitch or Description *"
+      description: "Provide a short elevator pitch: what you built, what technologies you used, what problem it solves."
+      placeholder: "Write your project description..."
     validations:
       required: true
  
   - type: input
     id: repo
     attributes:
-      label: Project Repository URL
-      placeholder: https://github.com/...
+      label: "Project Repository URL *"
+      description: "Add a link to your GitHub repository."
+      placeholder: "https://github.com/..."
     validations:
       required: true
  
   - type: input
     id: demo
     attributes:
-      label: Project Demo Video URL
-      placeholder: https://youtube.com/...
+      label: "Project Demo Video URL *"
+      description: "Share a public video link to your demo."
+      placeholder: "https://youtu.be/...."
+    validations:
+      required: true
+ 
+  - type: input
+    id: team
+    attributes:
+      label: "Team Members"
+      description: "Comma-separated list of GitHub usernames."
+      placeholder: "user1, user2, user3"
     validations:
       required: false
  
-  - type: textarea
-    id: team
+  - type: checkboxes
+    id: registration
     attributes:
-      label: Team Members
-      description: Add all team members involved.
-      placeholder: Name them here...
+      label: "Registration Status"
+      description: "By submitting, you confirm that your team is registered."
+      options:
+        - label: "I have completed registration"
     validations:
       required: true
