@@ -19,7 +19,7 @@ Submit your hackathon project details here.
  
 ---
  
-## **Youtube live learning plan**
+## **Did you attend the Youtube live learning plan**
 Select one:  
 - Yes  
 - No  
